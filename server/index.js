@@ -10,7 +10,7 @@ const {app,server}=require ('./socket/index')
 
 //const app=express()
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5173'); 
+    res.header('Access-Control-Allow-Origin', 'https://vartalap-frontend-73kxegeva-nikhil020yadavs-projects.vercel.app'); 
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
