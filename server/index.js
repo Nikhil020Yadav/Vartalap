@@ -18,7 +18,6 @@ app.use((req, res, next) => {
 const cookiesParser=require('cookie-parser')
 app.use(cors({
     origin:process.env.FRONTEND_URL,
-    methods : ["GET,"POST"],
     credentials:true
 }))
 
