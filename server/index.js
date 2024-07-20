@@ -16,10 +16,11 @@ app.use((req, res, next) => {
     next();
   });
 const cookiesParser=require('cookie-parser')
-app.use(cors({
-    origin:process.env.FRONTEND_URL,
-    credentials:true
-}))
+// app.use(cors({
+//     origin:process.env.FRONTEND_URL,
+//     credentials:true
+// }))
+app.use(cors());
 
 app.use(express.json())
 app.use(cookiesParser())
